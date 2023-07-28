@@ -10,30 +10,118 @@
             rel="stylesheet"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>First Tailwind Website! 🎉</title>
+        <title>md.teixeira</title>
     </head>
-    <body class="font-Poppins grid place-content-center min-h-screen">
-        <div class="flex flex-col max-w-[350px] shadow-md rounded-md">
-            <img
-                src="./assets/burger.jpg"
-                alt=""
-                class="max-h-36 object-cover rounded-t-md"
-            />
-            <div class="p-4">
-                <h1 class="text-xl mb-1">Burger Tower</h1>
-                <h2 class="text-sm mb-4 text-zinc-600">
-                    4.8/5 Stars (413 Reviews)
-                </h2>
-                <p class="text-xs mb-2">$$ - American, Burgers</p>
-                <p class="text-xs mb-4 text-zinc-600">
-                    Well-known burger franchise serving grilled burgers, fries &
-                    shakes
-                </p>
-                <div class="flex gap-x-2">
-                    <button class="btn bg-primary">View Website</button>
-                    <button class="btn bg-sky-400">Order Curbside</button>
+    <body class="font-Poppins bg-slate-900 text-white">
+        <article id="section-1" class="header flex flex-col h-screen">
+            <section class="flex my-5 justify-evenly">
+                <a class="link" href="">
+                    <img
+                        width="40"
+                        height="40"
+                        src="https://img.icons8.com/material-rounded/40/000000/github.png"
+                        class="invert"
+                        alt="github"
+                    />
+                    GitHub</a
+                >
+                <a class="link" href=""
+                    ><img
+                        width="40"
+                        height="40"
+                        src="https://img.icons8.com/external-solid-design-circle/40/external-CV-project-management-solid-design-circle.png"
+                        class="invert p-1"
+                        alt="external-CV-project-management-solid-design-circle"
+                    />Currículo</a
+                >
+                <a class="link" href=""
+                    ><img
+                        width="40"
+                        height="40"
+                        src="https://img.icons8.com/color/48/linkedin-circled--v1.png"
+                        alt="linkedin-circled--v1"
+                    />LinkedIn</a
+                >
+            </section>
+            <section
+                class="grid md:grid-cols-2 md:place-content-center justify-items-center h-full text-white"
+            >
+                <aside
+                    class="left h-full text-center mx-3 flex flex-col justify-center"
+                >
+                    <h1
+                        id="nome"
+                        class="text-gd font-bold lg:text-8xl md:text-6xl text-6xl"
+                    >
+                        Matheus Teixeira
+                    </h1>
+                    <hr />
+
+                    <h1 id="nome" class="text-gd font-bold text-4xl">
+                        Front-End Developer
+                    </h1>
+                </aside>
+                <aside class="right">
+                    <img
+                        class="hidden w-[27vw] p-2 border-purple-600 border-4 rounded-3xl md:block"
+                        src="/assets/images/mdteixeira.jpeg"
+                        alt=""
+                    />
+                </aside>
+            </section>
+        </article>
+        <section
+            class="mt-32 grid md:grid-cols-2 md:place-content-center justify-items-center h-full text-white"
+        >
+            <aside class="left h-full">
+                <h1 class="text-gd font-bold text-[3rem] text-center">
+                    Tecnologias
+                </h1>
+                <hr />
+
+                <h1 class="text-2xl mx-12 md:mx-32">
+                    Estas são algumas das tecnologias que aprendi a utilizar
+                    para desenvolver websites.
+                </h1>
+            </aside>
+            <aside class="right">
+                <h1>A fazer! imagem apresentando as tecnologias que sei utilizar</h1>
+                <h1>React</h1>
+                <h1>Bootstrap</h1>
+                <h1>TailwindCSS</h1>
+            </aside>
+        </section>
+        <section class="my-32">
+            <h1 class="text-gd font-bold text-[3rem] text-center">Projetos</h1>
+            <hr class="w-[25%]" />
+            <div
+                class="container grid mx-auto md:grid-cols-3 justify-items-center"
+            >
+                <div class="card">
+                    <h2 class="card-title">NewOdonto</h2>
+                    <img src="./assets/images/newOdonto.png" alt="" />
+                    <a href="" class="bg-primary btn">Conferir</a>
+                </div>
+                <div class="card">
+                    <h2 class="card-title">Santa Inês</h2>
+                    <img src="./assets/images/TapHouse.png" alt="" />
+                    <a href="" class="bg-primary btn">Conferir</a>
+                </div>
+                <div class="card">
+                    <h2 class="card-title">Calculadora IMC</h2>
+                    <img src="./assets/images/imc.png" alt="" />
+                    <a href="" class="bg-primary btn">Conferir</a>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- To Top -->
+        <a class="hidden" id="toTop" href="#" role="button"
+            ><img
+                id="img1"
+                src="./assets/images/to-top.png"
+                alt="Imagem Scroll Up"
+        /></a>
+        <script src="script.js"></script>
     </body>
 </html>
